@@ -11,10 +11,10 @@ import fotoCompleta from "../media/foto-completa.jpg";
 const Home = () => {
   return (
     <div className="h-full w-full flex bg-zinc-200">
-      <aside className="h-full w-2/12 bg-white py-1 px-5 flex flex-col">
+      <aside className="h-full w-2/12 bg-white top-0 left-0 bottom-0 py-1 px-5 flex flex-col fixed">
         <section>
           <div className="flex flex-col items-center py-1 px-1">
-            <img className="w-36 h-36 rounded-full" src={perfil.src} alt="Foto de Perfil"></img>
+            <img className="w-36 h-40 rounded-full" src={perfil.src} alt="Foto de Perfil"></img>
             <span className="text-lg font-semibold">Simón Berrio</span>
             <span className="text-gray-500">Desarrollador Fullstack</span>
           </div>
@@ -73,12 +73,12 @@ const Home = () => {
           </div>
         </section>
       </aside>
-      <main className="w-9/12 bg-white mx-7">
-        <section className="h-auto w-full flex gap-40">
+      <main className="w-9/12 bg-zinc-200 mx-8 pl-60 pr-8 flex-1 overflow-auto">
+        <section className="h-auto w-full flex gap-40 bg-white">
           <div className="w-2/3 flex flex-col gap-1 justify-items-center">
             <span className="w-full mt-4 text-3xl text-center">Hola! Soy Simón Berrio</span>
             <span className="w-full mt-4 text-3xl text-center text-green-300"> Desarrollador Fullstack</span>
-            <p className="w-full my-4 text-lg text-center">
+            <p className="w-full my-4 mx-10 text-lg text-center">
               Me considero una persona responsable, dinámica, con deseos de superación personal. Aprendo de manera rápida y asertiva con el fin de cumplir con puntualidad, honestidad y responsabilidad las distintas actividades que me son asignadas y para las cuales soy contratado.
             </p>
           </div>
@@ -91,15 +91,15 @@ const Home = () => {
           <div className="h-auto w-full bg-zinc-200">
             <TituloMain texto="Conocimientos"></TituloMain>
             <div className="flex flex-col bg-zinc-200 gap-5">
-              <div className="h-52 w-full flex gap-5">
-                <Conocimiento icono="Bootstrap" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
-                <Conocimiento icono="" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
-                <Conocimiento icono="" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
+              <div className="h-52 w-full flex gap-4">
+                <Conocimiento icono="Angular" titulo="Frontend" texto="Alguna mierda aquí pa probar"></Conocimiento>
+                <Conocimiento icono="Bootstrap" titulo="Estilos" texto="Alguna mierda aquí pa probar"></Conocimiento>
+                <Conocimiento icono="Android" titulo="Android" texto="Alguna mierda aquí pa probar"></Conocimiento>
               </div>
-              <div className="h-52 w-full flex gap-5">
-                <Conocimiento icono="" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
-                <Conocimiento icono="" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
-                <Conocimiento icono="" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
+              <div className="h-52 w-full flex gap-4">
+                <Conocimiento icono="Net" titulo="Backend" texto="Alguna mierda aquí pa probar"></Conocimiento>
+                <Conocimiento icono="MsqlServer" titulo="Bases Datos" texto="Alguna mierda aquí pa probar"></Conocimiento>
+                <Conocimiento icono="Java" titulo="Stand Alone" texto="Alguna mierda aquí pa probar"></Conocimiento>
               </div>
             </div>
           </div>
@@ -132,11 +132,19 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <SeparadorMain></SeparadorMain>
+        <section className="w-full">
+          <div className="w-full flex justify-items-center">
+            <span className="w-full text-xs text-center bg-white">
+              Todos los derechos reservados. Copyright Simón Berrio © 2023
+            </span>
+          </div>
+        </section>
       </main>
-      <aside className="h-full bg-white">
+      <aside className="h-full bg-white right-0 fixed">
         <section>
           <div className="flex flex-col gap-3 py-1 px-1">
-            <span className="text-sm font-semibold">Links</span>
+            <span className="pt-8 text-sm font-semibold">Links</span>
             <RedSocial href="https://github.com/Simonberrio14" icono="GitHub"></RedSocial>
             <RedSocial href="https://www.linkedin.com/in/simon-berrio-gaviria-70989b294/" icono="Linkedin"></RedSocial>
             <RedSocial href="https://www.facebook.com/simonb5" icono="Facebook"></RedSocial>
