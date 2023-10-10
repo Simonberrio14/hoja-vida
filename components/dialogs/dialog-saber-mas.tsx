@@ -1,4 +1,4 @@
-import {  Dialog, DialogContent, DialogTitle, IconButton } from "@mui/material";
+import { Dialog, DialogContent, DialogTitle, IconButton } from "@mui/material";
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
