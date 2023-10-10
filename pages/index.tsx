@@ -103,7 +103,7 @@ const Home = () => {
                 <Conocimiento icono="Bootstrap" titulo="Estilos"
                   texto="Junto con el framework Angular, trabajamos el diseño con la ayuda de otro framework llamado bootstrap."></Conocimiento>
                 <Conocimiento icono="Android" titulo="Android"
-                  texto="Durante la epoca de la pandemia en el año 2020, estuve innovando en el desarrollo de aplicaciones moviles en el sistema Android. Este fue desarrollado hasta un estado beta, ya que nunca salió a producción."></Conocimiento>
+                  texto="Durante la época de la pandemia en el año 2020, estuve innovando en el desarrollo de aplicaciones móviles en el sistema Android. Este fue desarrollado hasta un estado beta, ya que nunca salió a producción."></Conocimiento>
               </div>
               <div className="h-60 w-full flex gap-4">
                 <Conocimiento icono="Net" titulo="Backend"
@@ -121,19 +121,19 @@ const Home = () => {
           <div className="w-full bg-zinc-200 flex flex-col">
             <TituloMain texto="Educación"></TituloMain>
             <div className="w-full bg-white">
-              <Educacion institucion="Liceo Salazar y Herrera" cargo="Estudiante" fechas="enero 2004 - Diciembre 2010"
+              <Educacion institucion="Liceo Salazar y Herrera" cargo="Estudiante" fechas="Enero 2004 - Diciembre 2010"
                 tituloObtenido="Estudios primarios" 
                 descripcion="Allí cursé los grados desde primero hasta quinto. Donde, además de enseñar las materias académicas, se enfatiza el desarrollo de habilidades sociales, la formación de hábitos de estudio y la promoción de la creatividad y la curiosidad"></Educacion>
               <div className="w-full h-px px-10 bg-gray-100"></div>
-              <Educacion institucion="Liceo Salazar y Herrera" cargo="Estudiante" fechas="enero 2010 - Diciembre 2016"
+              <Educacion institucion="Liceo Salazar y Herrera" cargo="Estudiante" fechas="Enero 2010 - Diciembre 2016"
                 tituloObtenido="Bachiller"
-                descripcion="También allí, realicé todo el bachillerato desde el grado sexto hasta el grado undecimo. Donde me fue brindada una base sólida de conocimiento y habilidades tanto académicas como personales"></Educacion>
+                descripcion="También allí, realicé todo el bachillerato desde el grado sexto hasta el grado undécimo. Donde me fue brindada una base sólida de conocimiento y habilidades tanto académicas como personales"></Educacion>
               <div className="w-full h-px px-10 bg-gray-100"></div>
-              <Educacion institucion="Universidad de Antioquia" cargo="Estudiante" fechas="junio 2017 - Actualmente"
+              <Educacion institucion="Universidad de Antioquia" cargo="Estudiante" fechas="Junio 2017 - Actualmente"
                 tituloObtenido="Ingeniería de Sistemas"
-                descripcion="Luego de finalizar un curso preuniversitoraio en Formarte, ingrese a la Universidad de Antiquia donde actualmente me encuentro cursando el pregrado de Ingeniería de Sistemas en dicha universidad."></Educacion>
+                descripcion="Luego de finalizar un curso preuniversitario en Formarte, ingrese a la Universidad de Antiquia donde actualmente me encuentro cursando el pregrado de Ingeniería de Sistemas en dicha universidad."></Educacion>
               <div className="w-full h-px px-10 bg-gray-100"></div>
-              <Educacion institucion="Altos Software S.A.S." cargo="Analista/Programador" fechas="junio 2019 - Actualmente"
+              <Educacion institucion="Altos Software S.A.S." cargo="Analista/Programador" fechas="Junio 2019 - Actualmente"
                 tituloObtenido="Experencia Laboral"
                 descripcion="En esta empresa tuvé mis primeros inicios en la programación. En un principio inicié desarrollando aplicaciones de escritorio mediante PowerBuilder, para posteriormente incursionar en el desarrollo web en ambos frentes: Frontend(Angular) y Backend(.Net Core)."></Educacion>
             </div>
