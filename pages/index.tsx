@@ -1,5 +1,6 @@
 import { BarraProgreso } from "@/components/barra-progreso";
 import { Conocimiento } from "@/components/conocimiento";
+import { DialogPerfil } from "@/components/dialogs/dialog-perfil";
 import { Educacion } from "@/components/educacion";
 import { HabilidadExtra } from "@/components/habilidad-extra";
 import { ProyectoPortafolio } from "@/components/proyecto-portafolio";
@@ -9,6 +10,8 @@ import { TituloMain } from "@/components/titulo-main";
 import FotoCompleta from "../media/foto-completa.jpg";
 import FotoPerfil from "../media/foto-perfil.jpg";
 import FotoSuperSnake from "../media/super-snake.jpg";
+import FotoCervino from "../media/cervino.jpg";
+import FotoOlimpo from "../media/olimpo.jpg";
 
 const Home = () => {
   return (
@@ -57,7 +60,7 @@ const Home = () => {
             <BarraProgreso idioma="C#" porcentaje={100}></BarraProgreso>
             <BarraProgreso idioma="Java" porcentaje={90}></BarraProgreso>
             <BarraProgreso idioma="JavaScript" porcentaje={100}></BarraProgreso>
-            <BarraProgreso idioma="PowerBuilder" porcentaje={90}></BarraProgreso>
+            <BarraProgreso idioma="PowerBuilder" porcentaje={100}></BarraProgreso>
             <BarraProgreso idioma="Python" porcentaje={50}></BarraProgreso>
             <BarraProgreso idioma="R" porcentaje={40}></BarraProgreso>
             <BarraProgreso idioma="TypeScript" porcentaje={100}></BarraProgreso>
@@ -75,17 +78,18 @@ const Home = () => {
           </div>
         </section>
       </aside>
-      <main className="w-9/12 bg-zinc-200 mx-8 pl-60 pr-7 flex-1 overflow-auto">
+      <main className="w-9/12 bg-zinc-200 mx-8 pl-60 pr-7 flex-1 overflow-auto overflow-hidden">
         <section className="w-full flex gap-40 bg-white"> {/* Perfil */}
           <div className="w-2/3 flex flex-col gap-1 justify-items-center">
             <span className="w-full mt-4 text-3xl text-center">Hola! Soy Simón Berrio Gaviria</span>
             <span className="w-full mt-4 text-3xl text-center text-green-300"> Desarrollador Fullstack</span>
-            <p className="w-full my-4 mx-10 text-lg text-center">
+            <p className="w-full my-4 mx-10 text-lg text-left">
               Me considero una persona responsable, dinámica, con deseos de superación personal. Aprendo de manera rápida y asertiva con el fin de cumplir con puntualidad, honestidad y responsabilidad las distintas actividades que me son asignadas y para las cuales soy contratado.
             </p>
+            <DialogPerfil></DialogPerfil>
           </div>
           <div className="w-1/3">
-            <img className="w-64 h-64" src={FotoCompleta.src} alt="Foto Completa"></img>
+            <img className="w-80 h-80" src={FotoCompleta.src} alt="Foto Completa"></img>
           </div>
         </section>
         <SeparadorMain></SeparadorMain>
@@ -94,14 +98,20 @@ const Home = () => {
             <TituloMain texto="Conocimientos"></TituloMain>
             <div className="flex flex-col bg-zinc-200 gap-5">
               <div className="h-60 w-full flex gap-4">
-                <Conocimiento icono="Angular" titulo="Frontend" texto="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Conocimiento>
-                <Conocimiento icono="Bootstrap" titulo="Estilos" texto="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Conocimiento>
-                <Conocimiento icono="Android" titulo="Android" texto="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Conocimiento>
+                <Conocimiento icono="Angular" titulo="Frontend"
+                  texto="Durante el trabajo actual en la empresa con Altos Software, he tenido experiencia trabajando desarrollo frontend con el framework Angular."></Conocimiento>
+                <Conocimiento icono="Bootstrap" titulo="Estilos"
+                  texto="Junto con el framework Angular, trabajamos el diseño con la ayuda de otro framework llamado bootstrap."></Conocimiento>
+                <Conocimiento icono="Android" titulo="Android"
+                  texto="Durante la epoca de la pandemia en el año 2020, estuve innovando en el desarrollo de aplicaciones moviles en el sistema Android. Este fue desarrollado hasta un estado beta, ya que nunca salió a producción."></Conocimiento>
               </div>
               <div className="h-60 w-full flex gap-4">
-                <Conocimiento icono="Net" titulo="Backend" texto="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Conocimiento>
-                <Conocimiento icono="MsqlServer" titulo="Bases Datos" texto="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Conocimiento>
-                <Conocimiento icono="Java" titulo="Stand Alone" texto="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Conocimiento>
+                <Conocimiento icono="Net" titulo="Backend"
+                  texto="El framework usado dentro el trabajo para el desarrollo de backend es .Net Core. Junto con el manejo de Entity Framework para facilitar y mejorar la manipulación de la base de datos."></Conocimiento>
+                <Conocimiento icono="MsqlServer" titulo="Bases Datos"
+                  texto="El motor de base de datos usado es SQL Server. Donde se gestiona la información mediante el método relacional y se gestiona los permisos de los usuarios dentro de las bases de datos."></Conocimiento>
+                <Conocimiento icono="Screen" titulo="Stand Alone"
+                texto="Al ingresar a la empresa, inicié trabajando en desarrollo de aplicaciones de escritorio usando el lenguaje de programación PowerBuilder y conectando con bases de datos SQL Server"></Conocimiento>
               </div>
             </div>
           </div>
@@ -112,16 +122,20 @@ const Home = () => {
             <TituloMain texto="Educación"></TituloMain>
             <div className="w-full bg-white">
               <Educacion institucion="Liceo Salazar y Herrera" cargo="Estudiante" fechas="enero 2004 - Diciembre 2010"
-                tituloObtenido="Estudios primarios" descripcion="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Educacion>
+                tituloObtenido="Estudios primarios" 
+                descripcion="Allí cursé los grados desde primero hasta quinto. Donde, además de enseñar las materias académicas, se enfatiza el desarrollo de habilidades sociales, la formación de hábitos de estudio y la promoción de la creatividad y la curiosidad"></Educacion>
               <div className="w-full h-px px-10 bg-gray-100"></div>
               <Educacion institucion="Liceo Salazar y Herrera" cargo="Estudiante" fechas="enero 2010 - Diciembre 2016"
-                tituloObtenido="Bachiller" descripcion="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Educacion>
+                tituloObtenido="Bachiller"
+                descripcion="También allí, realicé todo el bachillerato desde el grado sexto hasta el grado undecimo. Donde me fue brindada una base sólida de conocimiento y habilidades tanto académicas como personales"></Educacion>
               <div className="w-full h-px px-10 bg-gray-100"></div>
               <Educacion institucion="Universidad de Antioquia" cargo="Estudiante" fechas="junio 2017 - Actualmente"
-                tituloObtenido="Ingeniería de Sistemas" descripcion="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Educacion>
+                tituloObtenido="Ingeniería de Sistemas"
+                descripcion="Luego de finalizar un curso preuniversitoraio en Formarte, ingrese a la Universidad de Antiquia donde actualmente me encuentro cursando el pregrado de Ingeniería de Sistemas en dicha universidad."></Educacion>
               <div className="w-full h-px px-10 bg-gray-100"></div>
               <Educacion institucion="Altos Software S.A.S." cargo="Analista/Programador" fechas="junio 2019 - Actualmente"
-                tituloObtenido="Experencia Laboral" descripcion="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></Educacion>
+                tituloObtenido="Experencia Laboral"
+                descripcion="En esta empresa tuvé mis primeros inicios en la programación. En un principio inicié desarrollando aplicaciones de escritorio mediante PowerBuilder, para posteriormente incursionar en el desarrollo web en ambos frentes: Frontend(Angular) y Backend(.Net Core)."></Educacion>
             </div>
           </div>
         </section>
@@ -130,12 +144,22 @@ const Home = () => {
           <div className="w-full bg-zinc-200 flex flex-col">
             <TituloMain texto="Portafolio"></TituloMain>
             <div className="w-full bg-zinc-200 overflow-x-auto whitespace-nowrap">
-              <div className="w-fit flex gap-10">
+              <div className="h-auto w-fit flex gap-10">
+                <ProyectoPortafolio imagen={FotoCervino} titulo="Cervino"
+                  descripcionCorta="Angular/.Net Core/Sql Server"
+                  descripcionLarga="Sistema web multiusuario que controla los Inventarios y el Alquiler de Equipos. Una vez determinados clientes, equipos, obras y otra información básica, permite alimentar las Remisiones y Devoluciones de Equipos, para finalmente generar la facturación correspondiente por período y los informes que de allí se derivan. Además con el ingreso de Entradas y Salidas de Equipos se mantiene actualizado el Inventario, permitiendo la generación de los respectivos informes"
+                  href="https://cervino.altos-apps.com"></ProyectoPortafolio>
+                <ProyectoPortafolio imagen={FotoOlimpo} titulo="Olimpo"
+                  descripcionCorta="Angular/.Net Core/Sql Server"
+                  descripcionLarga="Sistema web que controla los procesos de preinscripción, inscripción a preeventos, a eventos y a subeventos. Permite la configuración e impresión de escarapelas y certificados"
+                  href="https://olimpo.altos-apps.com"></ProyectoPortafolio>
                 <ProyectoPortafolio imagen={FotoSuperSnake} titulo="Super Snake"
-                  descripcion="Este proyecto realizado con Windows Forms en C#, basado en el popular juego clasico 'La Serpiente'."></ProyectoPortafolio>
-                <ProyectoPortafolio imagen={FotoCompleta} titulo="Algo" descripcion="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis eos ullam dolorum eum sapiente excepturi, maiores delectus molestias, quasi asperiores doloremque ad placeat quo eligendi repudiandae tempore expedita quod soluta!"></ProyectoPortafolio>
-                <ProyectoPortafolio imagen={FotoSuperSnake} titulo="Algo" descripcion="Otra Cosa"></ProyectoPortafolio>
-                <ProyectoPortafolio imagen={FotoSuperSnake} titulo="Algo" descripcion="Otra Cosa"></ProyectoPortafolio>
+                  descripcionCorta="Windows Forms en C#"
+                  descripcionLarga="Este proyecto se realizó basado en el popular juego clasico 'Snake'. El juego se centra en controlar una serpiente para que coma alimentos y crezca mientras se evitan colisiones con los bordes y el propio cuerpo"
+                  href="https://github.com/Simonberrio14/serpientica"></ProyectoPortafolio>
+                {/* <ProyectoPortafolio imagen={FotoSuperSnake} titulo="Proyecto Java" descripcionCorta=""
+                  descripcionLarga=""
+                  href=""></ProyectoPortafolio> */}
               </div>
             </div>
           </div>

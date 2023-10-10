@@ -18,7 +18,7 @@ function Educacion({ institucion, cargo, fechas, tituloObtenido, descripcion }: 
       </div>
       <div className="flex flex-col w-8/12">
         <span className="pt-10 pb-4">{tituloObtenido}</span>
-        <span className="text-gray-500">{descripcion}</span>
+        <span className="text-gray-500 pr-5">{descripcion}</span>
       </div>
     </div>
   );
