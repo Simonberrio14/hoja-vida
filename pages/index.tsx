@@ -78,7 +78,7 @@ const Home = () => {
           </div>
         </section>
       </aside>
-      <main className="w-9/12 bg-zinc-200 mx-8 pl-60 pr-7 flex-1 overflow-auto overflow-hidden">
+      <main className="w-9/12 bg-zinc-200 mx-8 pl-60 pr-7 flex-1 overflow-auto">
         <section className="w-full flex gap-40 bg-white"> {/* Perfil */}
           <div className="w-2/3 flex flex-col gap-1 justify-items-center">
             <span className="w-full mt-4 text-3xl text-center">Hola! Soy Simón Berrio Gaviria</span>

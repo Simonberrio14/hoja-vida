@@ -1,5 +1,6 @@
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, IconButton } from "@mui/material";
+import { Dialog, DialogActions, DialogContent, DialogTitle, IconButton } from "@mui/material";
 import React from "react";
+import FotoMasSobreMi from "@/media/foto-mas-sobre-mi.jpg";
 import { AiOutlineClose } from "react-icons/ai";
 
 function DialogPerfil() {
@@ -14,12 +15,12 @@ function DialogPerfil() {
 
   return (
     <div className="mx-10 pb-10">
-      <Button className="border-green-300 bg-green-300 text-black" variant="outlined" onClick={handleClickOpen}>
+      <button className="w-32 h-8 bg-green-300 text-black rounded-sm" onClick={handleClickOpen}>
         Más sobre mí
-      </Button>
+      </button>
       <Dialog onClose={handleClose} open={open}>
         <DialogTitle className="text-green-300" sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Modal title
+          Más Sobre Mí
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -34,15 +35,14 @@ function DialogPerfil() {
           <AiOutlineClose />
         </IconButton>
         <DialogContent>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias corporis quas aut doloremque officia, eos repudiandae reprehenderit amet temporibus consequatur voluptate unde. Quas esse explicabo expedita voluptates optio saepe?
-          </span>
+          <div className="flex flex-col gap-3">
+            <span>
+              Desde pequeño fuí una persona muy entusiasta y animado a la hora de hacer deporte. Entrené fútbol desde los 14 años pasando por varios equipos por Medellín hasta los 18 años. Algunos de estos equipos son Sellos Colombianos, Atletico Nacional, Los Paisitas.
+            </span>
+            <img src={FotoMasSobreMi.src} alt="Foto Más Sobre Mí" />
+          </div>
+
         </DialogContent>
-        <DialogActions>
-          <Button className="border-green-300 bg-green-300 text-black"  autoFocus onClick={handleClose}>
-            Ok
-          </Button>
-        </DialogActions>
       </Dialog>
     </div>
   );
